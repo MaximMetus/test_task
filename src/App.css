@@ -1,0 +1,102 @@
+html {
+  background-color: rgb(228, 228, 228);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.head-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+}
+
+.modal {
+  border: solid 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 5px 1px 10px black;
+}
+
+.name {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 95%;
+}
+
+.message {
+  width: 95%;
+  height: 100px;
+  resize: none;
+}
+
+.add {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(96, 178, 255);
+  color: white;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 150px;
+  width: 100px;
+  height: 30px;
+}
+
+.review-box {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 5px 1px 10px black;
+  margin-bottom: 3%;
+  height: 150px;
+  align-items: center;
+}
+
+.user-data{
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.user-logo__photo {
+  border: solid 2px rgb(185, 185, 185);
+  border-radius: 13px;
+}
+
+.button-container{
+  position: relative;
+  bottom: 30px;
+}
+
+.delete-button,
+.edit-button {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.edit-button {
+  position: absolute;
+  bottom: 90%;
+}
+
+.delete-button {
+  position: relative;
+  transform: translate(100%, -90%);
+}
+
+.edit-form{
+  position: relative;
+  margin-bottom: 30px;
+}
