@@ -1,0 +1,48 @@
+$shadow: 0 2px 4px 0 rgb(152, 159, 170);
+$radius: 5px;
+$modalBorder: 1px solid rgba(152, 159, 170, .49);
+$margin: 15px;
+$color: white;
+$buttonColor: rgb(96, 178, 255);
+$inputWidth: 95%;
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    border: $modalBorder;
+    width: 100%;
+    max-width: 700px;
+}
+
+.name {
+    margin-top: $margin;
+    margin-bottom: $margin;
+    width: $inputWidth;
+}
+
+.message {
+    width: $inputWidth;
+    height: 100px;
+    resize: none;
+}
+
+.add {
+    cursor: pointer;
+    border-radius: $radius;
+    border: none;
+    background-color: $buttonColor;
+    color: $color;
+    margin-bottom: $margin;
+    margin-top: $margin;
+    width: 100px;
+    height: 30px;
+}
+
+.edit-form {
+    position: relative;
+    margin-bottom: $margin * 2;
+}

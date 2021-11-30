@@ -1,0 +1,62 @@
+$shadow: 0 2px 4px 0 rgb(152, 159, 170);
+$reviewBoxBorder: 1px solid rgba(152, 159, 170, .49);
+$logoBorder: solid 2px rgb(185, 185, 185);
+
+.review-box {
+    position: relative;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: $shadow;
+    border: $reviewBoxBorder;
+    margin-bottom: 10px;
+    min-height: 140px;
+    max-width: 700px;
+    padding: 15px;
+    width: 100%;
+}
+
+.user {
+    &-data {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+        word-break: break-word;
+    }
+
+    &-name {
+        font-weight: bold;
+        padding-right: 55px;
+    }
+
+    &-message {
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    &-logo__photo {
+        border: $logoBorder;
+        border-radius: 13px;
+    }
+}
+
+.button {
+    &-container {
+        bottom: 30px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        height: 20px;
+        width: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-edit,
+    &-delete {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+    }
+}
